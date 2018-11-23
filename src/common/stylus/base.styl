@@ -1,0 +1,24 @@
+
+.clearfix
+  display inline-block
+  &after
+    content ''
+    display block
+    height 0
+    line-height 0
+    clearboth
+    visibility hidden
+
+
+border-1px($color)
+  position: relative
+  &:after
+    display: block
+    position: absolute
+    bottom: 0
+    left: 0
+    content: ''
+    width: 100%
+    border-top: 1px solid $color
+
+
